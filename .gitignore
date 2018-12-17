@@ -1,3 +1,6 @@
+# gitignoring output/ because output/ will be posted in gh-pages branch
+output/
+
 # PyCharm
 .idea
 
