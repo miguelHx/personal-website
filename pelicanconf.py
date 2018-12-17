@@ -4,15 +4,15 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Miguel Hernandez'
 SITENAME = ""
-# SITEURL = 'https://miguelhx.github.io/personal-website'
-SITEURL = 'http://localhost:8000'
+SITEURL = 'https://miguelhx.github.io/personal-website'
+# SITEURL = 'http://localhost:8000'
 SITETITLE = "Miguel Hernandez"
 SITESUBTITLE = "Software Engineer"
 SITEDESCRIPTION = "Personal Website and Blog by Miguel Hernandez"
 SITELOGO = SITEURL + "/images/miguel-pic.jpg"
 # FAVICON = SITEURL + "/images/favicon.ico"
-PYGMENTS_STYLE = "material"
-BROWSER_COLOR = "#42BCFC"
+PYGMENTS_STYLE = "monokai"
+BROWSER_COLOR = '#333'
 
 ROBOTS = 'index, follow'
 
@@ -25,6 +25,10 @@ CC_LICENSE = {
 COPYRIGHT_YEAR = 2016
 
 STATIC_PATHS = ['images']
+
+PAGE_PATHS = ['pages']
+
+ARTICLE_PATHS = ['articles']
 
 
 # EXTRA_PATH_METADATA = {
@@ -50,8 +54,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('about', 'http://getpelican.com/'),
-         ('resume/cv', 'http://python.org/'),)
+# LINKS = (('resume/cv', 'http://python.org/'),)
 
 # Social widget
 SOCIAL = (('linkedin', 'https://br.linkedin.com/in/alexandrevicenzi/en'),
