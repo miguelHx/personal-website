@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Miguel Hernandez'
-SITENAME = ""
+SITENAME = "Miguel's Website"
 SITEURL = 'https://miguelhx.github.io/personal-website'
 # SITEURL = 'http://localhost:8000'
 SITETITLE = "Miguel Hernandez"
@@ -11,7 +11,7 @@ SITESUBTITLE = "Software Engineer"
 SITEDESCRIPTION = "Personal Website and Blog by Miguel Hernandez"
 SITELOGO = SITEURL + "/images/miguel-pic.jpg"
 # FAVICON = SITEURL + "/images/favicon.ico"
-PYGMENTS_STYLE = "monokai"
+PYGMENTS_STYLE = "emacs"
 BROWSER_COLOR = '#333'
 
 ROBOTS = 'index, follow'
@@ -57,7 +57,7 @@ AUTHOR_FEED_RSS = None
 # LINKS = (('resume/cv', 'http://python.org/'),)
 
 # Social widget
-SOCIAL = (('linkedin', 'https://br.linkedin.com/in/alexandrevicenzi/en'),
+SOCIAL = (('linkedin', 'https://www.linkedin.com/in/miguel-hernandez-535b05102/'),
           ('github', 'https://github.com/miguelhx'),
           ('twitter', 'https://twitter.com/miguel_hx'),)
 
