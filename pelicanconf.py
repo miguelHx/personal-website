@@ -61,9 +61,9 @@ SOCIAL = (('linkedin', 'https://br.linkedin.com/in/alexandrevicenzi/en'),
           ('github', 'https://github.com/miguelhx'),
           ('twitter', 'https://twitter.com/miguel_hx'),)
 
-MENUITEMS = (('Archives', '/archives.html'),
-              ('Categories', '/categories.html'),
-              ('Tags', '/tags.html'),)
+MENUITEMS = (('Archives', SITEURL + '/archives.html'),
+              ('Categories', SITEURL + '/categories.html'),
+              ('Tags', SITEURL + '/tags.html'),)
 
 DEFAULT_PAGINATION = 10
 
