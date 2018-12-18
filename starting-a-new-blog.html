@@ -32,22 +32,25 @@
     <meta name="msapplication-TileColor" content="#333">
 
 <meta name="author" content="Miguel Hernandez" />
-<meta name="description" content="Testing out this article. There is no actual keyboard review." />
-<meta name="keywords" content="">
+<meta name="description" content="My thoughts on starting a new blog" />
+<meta name="keywords" content="pelican, blogging, github-pages">
 
 <meta property="og:site_name" content="Miguel's Website"/>
-<meta property="og:title" content="My First Review"/>
-<meta property="og:description" content="Testing out this article. There is no actual keyboard review."/>
+<meta property="og:title" content="Starting a New Blog"/>
+<meta property="og:description" content="My thoughts on starting a new blog"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="https://miguelhx.github.io/personal-website/my-first-review.html"/>
+<meta property="og:url" content="https://miguelhx.github.io/personal-website/starting-a-new-blog.html"/>
 <meta property="og:type" content="article"/>
-<meta property="article:published_time" content="2018-12-16 10:20:00-08:00"/>
-<meta property="article:modified_time" content=""/>
+<meta property="article:published_time" content="2018-12-18 07:20:00-08:00"/>
+<meta property="article:modified_time" content="2018-12-18 07:20:00-08:00"/>
 <meta property="article:author" content="https://miguelhx.github.io/personal-website/author/miguel-hernandez.html">
-<meta property="article:section" content="Test"/>
+<meta property="article:section" content="Personal"/>
+<meta property="article:tag" content="pelican"/>
+<meta property="article:tag" content="blogging"/>
+<meta property="article:tag" content="github-pages"/>
 <meta property="og:image" content="https://miguelhx.github.io/personal-website/images/miguel-pic.jpg">
 
-  <title>Miguel's Website &ndash; My First Review</title>
+  <title>Miguel's Website &ndash; Starting a New Blog</title>
 
 </head>
 <body>
@@ -94,9 +97,9 @@
 <article class="single">
   <header>
       
-    <h1 id="my-first-review">My First Review</h1>
+    <h1 id="starting-a-new-blog">Starting a New Blog</h1>
     <p>
-          Posted on Sun 16 December 2018 in <a href="https://miguelhx.github.io/personal-website/category/test.html">Test</a>
+          Posted on Tue 18 December 2018 in <a href="https://miguelhx.github.io/personal-website/category/personal.html">Personal</a>
 
 
     </p>
@@ -104,11 +107,34 @@
 
 
   <div>
-    <p>Testing out this article.
-There is no actual keyboard review.</p>
+    <p>I’m eager to share my thoughts through blogging.
+My aim is to write posts on topics such as programming tutorials, thoughts about a particular technology, and whatever else comes to mind.</p>
+<p>I started this blog using <a href="http://docs.getpelican.com/en/stable/">Pelican</a>, a static site generator written in Python.  The site is hosted on Github Pages.  Github Pages hosts static websites for free and it is
+<a href="https://www.savjee.be/2017/10/Static-website-hosting-who-is-fastest/">fast</a>.</p>
+<p>Pelican supports Markdown, which is really nice.  In general, it makes it straightforward for a developer to build a blog easily, assuming you are comfortable with the command line and Python.</p>
+<p>Here's a random Python code snippet that draws a snowflake using Python's turtle library (it has nothing to do with this post. Just wanted to demonstrate how a code block looks using markdown):</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">turtle</span> <span class="kn">import</span> <span class="n">Turtle</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">()</span>
+<span class="n">t</span><span class="o">.</span><span class="n">speed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">180</span>
+<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="mi">9</span><span class="o">*</span><span class="n">c</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">a</span><span class="p">)</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">a</span><span class="p">)</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">a</span><span class="p">)</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+        <span class="n">t</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">a</span><span class="p">)</span>
+<span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Press any key to continue...&#39;</span><span class="p">)</span>
+</pre></div>
   </div>
   <div class="tag-cloud">
     <p>
+      <a href="https://miguelhx.github.io/personal-website/tag/pelican.html">pelican</a>
+      <a href="https://miguelhx.github.io/personal-website/tag/blogging.html">blogging</a>
+      <a href="https://miguelhx.github.io/personal-website/tag/github-pages.html">github-pages</a>
     </p>
   </div>
 
