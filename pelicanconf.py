@@ -46,7 +46,7 @@ THEME = 'MinimalXY'
 
 # Theme customizations
 MINIMALXY_CUSTOM_CSS = 'static/custom.css'
-# MINIMALXY_FAVICON = 'favicon.ico'
+MINIMALXY_FAVICON = 'favicon.ico'
 MINIMALXY_START_YEAR = 2018
 MINIMALXY_CURRENT_YEAR = datetime.datetime.now().year
 
@@ -79,7 +79,8 @@ AUTHOR_FEED_RSS = None
 # Social widget
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/miguel-hernandez-535b05102/'),
           ('github', 'https://github.com/miguelhx'),
-          ('twitter', 'https://twitter.com/miguel_hx'),)
+          ('twitter', 'https://twitter.com/miguel_hx'),
+          ('rss', '/feeds/all.atom.xml'),)
 
 MENUITEMS = (('Archives', SITEURL + '/archives.html'),
               ('Categories', SITEURL + '/categories.html'),

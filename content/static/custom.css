@@ -7,3 +7,14 @@
 #intro-description {
     color: white;
 }
+
+/*
+
+    {% if CATEGORY_FEED_ATOM and category and category.slug %}
+    <link rel="alternate" type="application/atom+xml" href="{{ FEED_DOMAIN }}/{{ CATEGORY_FEED_ATOM|format(category.slug) }}" title="{{ SITENAME }} Categories Atom Feed" />
+    {% endif %}
+    TODO
+    note to self:
+    The above line of code (originally from base.html, now taken out) causes a python parsing problem.
+    I should make an issue about this on github, with error-reproducing steps.
+ */
