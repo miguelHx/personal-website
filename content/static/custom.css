@@ -1,7 +1,9 @@
-p {
-    font-size: 1.2rem;
+
+#intro-container {
+    background-image: url("../images/about-bg.jpg");
+    background-repeat: repeat-y;
 }
 
-.btn {
-    font-size: 1rem !important;
+#intro-description {
+    color: white;
 }

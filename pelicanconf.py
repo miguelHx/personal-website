@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import datetime
 
 AUTHOR = 'Miguel Hernandez'
 SITENAME = "Miguel's Website"
@@ -10,9 +11,9 @@ SITEURL = 'https://www.miguelhx.com'
 SITETITLE = "Miguel Hernandez"
 SITESUBTITLE = "Software Engineer"
 SITEDESCRIPTION = "Personal Website and Blog by Miguel Hernandez"
-SITELOGO = SITEURL + "/images/miguel-pic.jpg"
+SITELOGO = SITEURL + "/images/miguel-pic.png"
 # FAVICON = SITEURL + "/images/favicon.ico"
-PYGMENTS_STYLE = "emacs"
+PYGMENTS_STYLE = "monokai"
 BROWSER_COLOR = '#333'
 
 ROBOTS = 'index, follow'
@@ -37,11 +38,27 @@ EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
 }
 
-CUSTOM_CSS = 'static/custom.css'
+# CUSTOM_CSS = 'static/custom.css'
 
 MAIN_MENU = True
 
-THEME = 'Flex'
+THEME = 'MinimalXY'
+
+# Theme customizations
+MINIMALXY_CUSTOM_CSS = 'static/custom.css'
+# MINIMALXY_FAVICON = 'favicon.ico'
+MINIMALXY_START_YEAR = 2018
+MINIMALXY_CURRENT_YEAR = datetime.datetime.now().year
+
+# Theme settings
+DISPLAY_PAGES_ON_MENU=True
+DISPLAY_CATEGORIES_ON_MENU=False
+
+# Author
+AUTHOR_INTRO = 'Miguel Hernandez | Software Engineer'
+AUTHOR_DESCRIPTION = 'See about me page for details :)'
+AUTHOR_AVATAR = SITELOGO
+AUTHOR_WEB = SITEURL
 
 PATH = 'content'
 
