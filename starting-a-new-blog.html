@@ -1,124 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <title>Starting a New Blog &ndash; Miguel's Website</title>
 
-    <link rel="stylesheet" type="text/css" href="https://www.miguelhx.com/theme/stylesheet/style.min.css">
+    <!-- Meta -->
+    <meta name="description" content="Miguel's Website &ndash; Software Engineer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" type="text/css" href="https://www.miguelhx.com/theme/pygments/emacs.min.css">
-  <link rel="stylesheet" type="text/css" href="https://www.miguelhx.com/theme/font-awesome/css/font-awesome.min.css">
+    <!-- Social -->
+    <meta property="article:author" content="Miguel Hernandez" />
+    <meta property="article:section" content="Personal" />
+    <meta property="article:published_time" content="2018-12-18" />
 
-    <link href="https://www.miguelhx.com/static/custom.css" rel="stylesheet">
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Starting a New Blog"/>
+    <meta property="og:description" content="My thoughts on starting a new blog"/>
+    <meta property="og:site_name" content="Miguel's Website" />
+    <meta property="og:url" content="https://www.miguelhx.com/starting-a-new-blog.html"/>
 
-    <link href="https://www.miguelhx.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Miguel's Website Atom">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Starting a New Blog">
+    <meta name="twitter:description" content="My thoughts on starting a new blog">
+    <meta name="twitter:url" content="https://www.miguelhx.com/starting-a-new-blog.html">
 
+    <!-- Feed -->
+    <link rel="alternate" type="application/atom+xml" href="https://www.miguelhx.com/feeds/all.atom.xml" title="Miguel's Website Atom Feed" />
+    <link rel="alternate" type="application/rss+xml" href="http://miguelhx.disqus.com/latest.rss" title="Miguel's Website Comments RSS Feed">
 
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold">
+    <link rel="stylesheet" type="text/css" href="https://www.miguelhx.com/theme/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="https://www.miguelhx.com/theme/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://www.miguelhx.com/theme/css/jqcloud.css">
+    <link rel="stylesheet" type="text/css" href="https://www.miguelhx.com/theme/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://www.miguelhx.com/theme/css/pygments-highlight-github.css">
+    <link rel="stylesheet" type="text/css" href="https://www.miguelhx.com/static/pygments/monokai.min.css">
+    <link rel="stylesheet" type="text/css" href="https://www.miguelhx.com/static/custom.css">
 
-<!-- Google Analytics -->
-<script type="text/javascript">
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <!-- Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.miguelhx.com/favicon.ico">
 
-  ga('create', 'UA-131167727-1', 'auto');
-  ga('send', 'pageview');
-</script>
-<!-- End Google Analytics -->
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#333">
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#333">
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Microsoft EDGE -->
-    <meta name="msapplication-TileColor" content="#333">
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://www.miguelhx.com/theme/js/jqcloud.min.js"></script>
+  </head>
 
-<meta name="author" content="Miguel Hernandez" />
-<meta name="description" content="My thoughts on starting a new blog" />
-<meta name="keywords" content="pelican, blogging, github-pages">
-
-<meta property="og:site_name" content="Miguel's Website"/>
-<meta property="og:title" content="Starting a New Blog"/>
-<meta property="og:description" content="My thoughts on starting a new blog"/>
-<meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="https://www.miguelhx.com/starting-a-new-blog.html"/>
-<meta property="og:type" content="article"/>
-<meta property="article:published_time" content="2018-12-18 07:20:00-08:00"/>
-<meta property="article:modified_time" content="2018-12-18 07:20:00-08:00"/>
-<meta property="article:author" content="https://www.miguelhx.com/author/miguel-hernandez.html">
-<meta property="article:section" content="Personal"/>
-<meta property="article:tag" content="pelican"/>
-<meta property="article:tag" content="blogging"/>
-<meta property="article:tag" content="github-pages"/>
-<meta property="og:image" content="https://www.miguelhx.com/images/miguel-pic.jpg">
-
-  <title>Miguel's Website &ndash; Starting a New Blog</title>
-
-</head>
-<body>
-  <aside>
-    <div>
-      <a href="https://www.miguelhx.com">
-        <img src="https://www.miguelhx.com/images/miguel-pic.jpg" alt="Miguel Hernandez" title="Miguel Hernandez">
-      </a>
-      <h1><a href="https://www.miguelhx.com">Miguel Hernandez</a></h1>
-
-<p>Software Engineer</p>
-      <nav>
-        <ul class="list">
-          <li><a href="https://www.miguelhx.com/pages/about-me.html#about-me">About Me</a></li>
-          <li><a href="https://www.miguelhx.com/pages/contact.html#contact">Contact</a></li>
-
-        </ul>
-      </nav>
-
-      <ul class="social">
-        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/miguel-hernandez-535b05102/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        <li><a class="sc-github" href="https://github.com/miguelhx" target="_blank"><i class="fa fa-github"></i></a></li>
-        <li><a class="sc-twitter" href="https://twitter.com/miguel_hx" target="_blank"><i class="fa fa-twitter"></i></a></li>
-      </ul>
+  <body>
+    <div class="w3-row w3-card w3-white">
+      <header id="header">
+        <a href="https://www.miguelhx.com" id="header-logo" title="Home">MH</a>
+        <nav id="header-menu">
+          <ul>
+            <li class="w3-bottombar w3-border-white w3-hover-border-blue"><a href="https://www.miguelhx.com/pages/about-me.html">About Me</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-blue"><a href="https://www.miguelhx.com/pages/contact.html">Contact</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-blue"><a href="http://localhost:8000/archives.html">Archives</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-blue"><a href="http://localhost:8000/categories.html">Categories</a></li>
+            <li class="w3-bottombar w3-border-white w3-hover-border-blue"><a href="http://localhost:8000/tags.html">Tags</a></li>
+          </ul>
+        </nav>
+      </header>
     </div>
 
 
-  </aside>
-  <main>
 
-    <nav>
-      <a href="https://www.miguelhx.com">    Home
-</a>
+    <br><br><br>
 
-      <a href="https://www.miguelhx.com/archives.html">Archives</a>
-      <a href="https://www.miguelhx.com/categories.html">Categories</a>
-      <a href="https://www.miguelhx.com/tags.html">Tags</a>
+    <article>
+      <header class="w3-container col-main">
+        <h1>Starting a New Blog</h1>
+        <div class="post-info">
+          <div class="w3-opacity w3-margin-right w3-margin-bottom" style="flex-grow: 1;">
+            <span><time datetime="2018-12-18T07:20:00-08:00">Tue 18 December 2018</time> in <a href="https://www.miguelhx.com/category/personal.html" title="All articles in category Personal">Personal</a></span>
+          </div>
+          <div>
+            <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+              <a href="https://www.miguelhx.com/tag/pelican.html" title="All articles with Pelican tag">#pelican</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+              <a href="https://www.miguelhx.com/tag/blogging.html" title="All articles with Blogging tag">#blogging</a>
+            </span>
+            <span class="w3-tag w3-light-grey w3-text-blue w3-hover-blue">
+              <a href="https://www.miguelhx.com/tag/github-pages.html" title="All articles with Github-Pages tag">#github-pages</a>
+            </span>
+          </div>
+        </div>
+      </header>
 
-      <a href="https://www.miguelhx.com/feeds/all.atom.xml">    Atom
-</a>
-
-    </nav>
-
-<article class="single">
-  <header>
-      
-    <h1 id="starting-a-new-blog">Starting a New Blog</h1>
-    <p>
-          Posted on Tue 18 December 2018 in <a href="https://www.miguelhx.com/category/personal.html">Personal</a>
+      <br>
 
 
-    </p>
-  </header>
-
-
-  <div>
-    <p>I’m eager to share my thoughts through blogging.
+      <div class="col-main w3-container">
+        <section id="content">
+          <p>I’m eager to share my thoughts through blogging.
 My aim is to write posts on topics such as programming tutorials, thoughts about a particular technology, and whatever else comes to mind.</p>
 <p>I started this blog using <a href="http://docs.getpelican.com/en/stable/">Pelican</a>, a static site generator written in Python.  The site is hosted on Github Pages.  Github Pages hosts static websites for free and it is
 <a href="https://www.savjee.be/2017/10/Static-website-hosting-who-is-fastest/">fast</a>.</p>
@@ -140,68 +116,85 @@ My aim is to write posts on topics such as programming tutorials, thoughts about
         <span class="n">t</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">a</span><span class="p">)</span>
 <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Press any key to continue...&#39;</span><span class="p">)</span>
 </pre></div>
-  </div>
-  <div class="tag-cloud">
-    <p>
-      <a href="https://www.miguelhx.com/tag/pelican.html">pelican</a>
-      <a href="https://www.miguelhx.com/tag/blogging.html">blogging</a>
-      <a href="https://www.miguelhx.com/tag/github-pages.html">github-pages</a>
-    </p>
-  </div>
+        </section>
+
+        <br><br><br>
+
+        <footer>
+          <div class="adjust-width">
+            <div id="author-block" class="w3-light-grey w3-border">
+              <div id="author-info">
+                <a href="http://localhost:8000"><img style="width: 60px; height: 60px;" src="http://localhost:8000/images/miguel-pic.png" onerror="this.src='theme/images/avatar.png'" alt="Avatar"></a>
+                <div style="margin-left: 20px; margin-top: 15px;">
+                  <a href="http://localhost:8000"><span id="author-name" class="w3-hover-text-dark-grey">Miguel Hernandez</span></a>
+                  <p id="author-story">See about me page for details :)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br><br><br>
+
+          <p style="font-size:10pt; font-style: italic;">Did you like this article? Share it with your friends!</p>
+          <div id="share" class="share">
+            <a href="http://www.facebook.com/sharer.php?u=https%3A//www.miguelhx.com/starting-a-new-blog.html&amp;t=Miguel%27s%20Website%3A%20Starting%20a%20New%20Blog" target="_blank" class="w3-btn w3-indigo">
+              <i class="fa fa-facebook"></i> <span>Facebook</span>
+            </a>
+            <a href="http://twitter.com/share?url=https%3A//www.miguelhx.com/starting-a-new-blog.html&amp;text=Miguel%27s%20Website%3A%20Starting%20a%20New%20Blog" target="_blank" class="w3-btn w3-blue">
+              <i class="fa fa-twitter"></i> <span>Twitter</span>
+            </a>
+            <a href="https://plus.google.com/share?url=https%3A//www.miguelhx.com/starting-a-new-blog.html" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="w3-btn w3-red">
+              <i class="fa fa-google-plus"></i> <span>Google</span>
+            </a>
+          </div>
+
+          <br><br><br>
 
 
+          <div id="disqus_thread"></div>
+          <script>
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+             */
+            
+            var disqus_config = function () {
+              this.page.url = 'https://www.miguelhx.com';  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = 'starting-a-new-blog'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            
+            (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+              var d = document, s = d.createElement('script');
+              
+              s.src = 'https://miguelhx.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+              
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+          <br><br><br>
+
+        </footer>
+      </div>
+    </article>
 
 
+    <footer id="footer">
+      <div id="footer-copyright" class="w3-center w3-small w3-text-grey w3-padding-48">
+        <span>&copy; 2018-2018 Miguel Hernandez  | <a href="https://www.miguelhx.com/feeds/all.atom.xml">Atom feed <i class="fa fa-rss" aria-hidden="true"></i></a></span>
+      </div>
+    </footer>
 
-<!-- Disqus -->
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'miguelhx';
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>
-        Please enable JavaScript to view comments.
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-131167727-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 
-</noscript>
-<!-- End Disqus -->
-</article>
-
-    <footer>
-<p>
-  &copy;  2016 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
-</p>
-<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
-</p><p>
-  <a rel="license"
-     href="http://creativecommons.org/licenses/by-sa/4.0/"
-     target="_blank">
-    <img alt="Creative Commons License"
-         title="Creative Commons License"
-         style="border-width:0"
-           src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
-         width="80"
-         height="15"/>
-  </a>
-</p>    </footer>
-  </main>
-
-
-
-
-<script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "Blog",
-  "name": " Miguel's Website ",
-  "url" : "https://www.miguelhx.com",
-  "image": "https://www.miguelhx.com/images/miguel-pic.jpg",
-  "description": "Personal Website and Blog by Miguel Hernandez"
-}
-</script>
-
-</body>
+  </body>
 </html>
