@@ -6,7 +6,7 @@ import datetime
 AUTHOR = 'Miguel Hernandez'
 SITENAME = "Miguel's Website"
 # SITEURL = 'https://miguelhx.github.io/personal-website'
-SITEURL = 'https://www.miguelhx.com'
+SITEURL = 'https://blog.miguelhx.com'
 # SITEURL = 'http://localhost:8000'
 SITETITLE = "Miguel Hernandez"
 SITESUBTITLE = "Software Engineer"
