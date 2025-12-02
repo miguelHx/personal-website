@@ -10,4 +10,4 @@ Over the next couple of years, I plan to revisit the fundamentals of Computer Sc
 
 My approach will be to cherry-pick courses from Open Source Society University, the [Computer Science curriculum](https://github.com/ossu/computer-science) and books recommended by [teachyourselfcs.com](https://teachyourselfcs.com/). For now, I'm focusing on the computer science curriculum, currently taking Systematic Program Design and Mathematics for Computer Science.
 
-I will explain why I decided this path in my next blog post.
+I will explain why I decided this path in my [next blog post](revisiting-software-fundamentals.html).
