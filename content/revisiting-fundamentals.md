@@ -2,6 +2,7 @@ Title: Why I'm revisiting software fundamentals and my learning plan
 Date: 2025-11-30 22:03
 Tags: ossu,computer-science
 Slug: revisiting-software-fundamentals
+Pin: true
 
 I'm sure we all agree that mastering the fundamentals is important. This is true for any discipline. In this blog post, I will be sharing my learning roadmap/plan for revisiting the fundamentals of CS/Software and discuss why I'm doing this. I will also discuss with my thoughts about a master's, an actual software engineer job, and the bigger picture.
 

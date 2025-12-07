@@ -1,3 +1,5 @@
+import os
+
 from datetime import datetime
 
 AUTHOR = 'Miguel Hernandez'
@@ -15,6 +17,11 @@ PYGMENTS_STYLE = "monokai"
 TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = 'en'
+
+DISQUS_SITENAME = "miguels-personal-website"
+plugin_path = os.environ['PIN_PLUGIN_PATH']
+PLUGIN_PATHS = [plugin_path]
+PLUGINS = ['pin_to_top']
 
 DISABLE_URL_HASH = True
 
