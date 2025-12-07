@@ -46,11 +46,11 @@ Long term, I believe this will make me a better overall engineer for when I do l
 
 However, it could be argued that getting a job ASAP instead and just learning on the job may be more valuable rather than revisiting the fundamentals full time. And that's valid. And there's the money aspect too.
 
-The money is important, yes. But more important to me is becoming a highly skilled engineer, learning for the love of it and satisfying my curiosity. Last but not least, I want to please God. I hope that reaching my full potential will make Him proud of me.
-
-I am doing interview prep along with going through the curriculum. This includes leetcode, system design, mock interviews, etc. This is so I'll be prepared towards the end of the curriculum when I'll be looking for a job anyway.
+The money is important, yes. But more important to me is becoming a highly skilled engineer, learning for the love of it and satisfying my curiosity. Being highly skilled is more likely to attract money.
 
 If I was offered a job at a company that's a right mutual fit today though I might just take it. Then, I'll learn these online courses on the side. This will stretch out my learning timeline, which I'm okay with. But it has to be the right opportunity. I'm also doing okay with enough resources to keep me afloat for a while without having to work.
+
+I am doing interview prep along with going through the curriculum. This includes leetcode, system design, mock interviews, etc. This is so I'll be prepared towards the end of the curriculum when I'll be looking for a job anyway.
 
 Plus, the experience from on the job learning will be valuable, of course. I just don't think many companies will let you use company time to focus on fundamentals learning at a deep level. They want you to already have strong fundamentals. I think I'm good enough now though to adapt and perform well in many software engineer positions, but I'm taking a few steps back to try to get to a whole new level.
 
