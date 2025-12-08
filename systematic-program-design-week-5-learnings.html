@@ -52,13 +52,13 @@
  
 
 <meta name="author" content="Miguel Hernandez" />
-<meta name="description" content="For operating on natural numbers, the structure is similar to operating on lists. To process or traverse all elements from 0 to n, we recursively reduce n until we get to the base case 0, applying any operations in between. Importantly, know that when we design programs, we come up …" />
+<meta name="description" content="This is my brain dump of week 5 of SPD. I might not go into too much detail and to understand some of it you might need to be familiar with the Racket language and have completed weeks 1-4. I haven&#39;t created blog posts about weeks 1-4 yet because I …" />
 <meta name="keywords" content="ossu, computer-science, spd, racket">
 
 
   <meta property="og:site_name" content="Miguel's Personal Website"/>
   <meta property="og:title" content="Systematic Program Design: Week 5 learnings"/>
-  <meta property="og:description" content="For operating on natural numbers, the structure is similar to operating on lists. To process or traverse all elements from 0 to n, we recursively reduce n until we get to the base case 0, applying any operations in between. Importantly, know that when we design programs, we come up …"/>
+  <meta property="og:description" content="This is my brain dump of week 5 of SPD. I might not go into too much detail and to understand some of it you might need to be familiar with the Racket language and have completed weeks 1-4. I haven&#39;t created blog posts about weeks 1-4 yet because I …"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:url" content="/systematic-program-design-week-5-learnings.html"/>
   <meta property="og:type" content="article"/>
@@ -148,7 +148,9 @@
 
 
   <div>
-    <p>For operating on natural numbers, the structure is similar to operating on lists. To process or traverse all elements from 0 to n, we recursively reduce n until we get to the base case 0, applying any operations in between.</p>
+    <p>This is my brain dump of week 5 of SPD. I might not go into too much detail and to understand some of it you might need to be familiar with the Racket language and have completed weeks 1-4. I haven't created blog posts about weeks 1-4 yet because I just spun up my blog at the beginning of week 5. I do plan on going back and creating blog posts for those weeks.</p>
+<h3>Week 5a - Naturals and 5b - Helpers</h3>
+<p>For operating on natural numbers, the structure is similar to operating on lists. To process or traverse all elements from 0 to n, we recursively reduce n until we get to the base case 0, applying any operations in between.</p>
 <p>Importantly, know that when we design programs, we come up with data definitions that represent information, and we can take any data to represent any information we want.  The example from the video was that we used a list of strings to represent natural numbers.  Now of course, the underlying hardware makes some primitive data faster than other primitive data.</p>
 <p>The good news is that while the problems get larger, the work to do at any moment in time does not get harder. Most of the work is HtDD (How to Design Data) and HtDF (How to Design Functions) work I already know how to do (from previous weeks). That's the contribution of the design method, to reduce ever more complex problems to smaller pieces I know how to solve.</p>
 <p>Big design problems need to be broken into smaller pieces in order to be tractable.</p>
@@ -170,13 +172,13 @@
 <p>When you start to get into bigger programs, lots of programmers actually keep a pad of paper by their desk, to kinda keep track of where they are in something. TODOs are good for that, but pen and paper is too.</p>
 <p>When we shift knowledge domain, we should use a helper function.</p>
 <p>Helper function rules summarized:</p>
-<p>Function composition rule:  a function should be split into a function composition when it performs two or more distinct operations on the consumed data
+<p><strong>Function composition rule:</strong>  a function should be split into a function composition when it performs two or more distinct operations on the consumed data
 For example (same as above):</p>
 <div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">arrange-images</span><span class="w"> </span><span class="n">loi</span><span class="p">)</span>
 <span class="w">  </span><span class="p">(</span><span class="n">layout-images</span><span class="w"> </span><span class="p">(</span><span class="n">sort-images</span><span class="w"> </span><span class="n">loi</span><span class="p">)))</span>
 </code></pre></div>
 
-<p>Operate on arbitrarily sized data rule:  When an expression must operate on a list -- and go arbitrarily far into that list -- then it must call a helper function to do that.
+<p><strong>Operate on arbitrarily sized data rule:</strong>  When an expression must operate on a list -- and go arbitrarily far into that list -- then it must call a helper function to do that.
 Example:</p>
 <div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">sort-images</span><span class="w"> </span><span class="n">loi</span><span class="p">)</span>
 <span class="w">  </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">loi</span><span class="p">)</span><span class="w"> </span><span class="nb">empty</span><span class="p">]</span>
@@ -186,7 +188,7 @@ Example:</p>
 </code></pre></div>
 
 <p>The helper function we are calling here is insert.</p>
-<p>Knowledge domain shift:  When we shift knowledge domain, we should use a helper function.
+<p><strong>Knowledge domain shift:</strong>  When we shift knowledge domain, we should use a helper function.
 Example:</p>
 <div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">insert</span><span class="w"> </span><span class="n">img</span><span class="w"> </span><span class="n">loi</span><span class="p">)</span>
 <span class="w">  </span><span class="p">(</span><span class="k">cond</span><span class="w"> </span><span class="p">[(</span><span class="nb">empty?</span><span class="w"> </span><span class="n">loi</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="n">img</span><span class="w"> </span><span class="nb">empty</span><span class="p">)]</span>
