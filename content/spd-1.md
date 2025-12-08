@@ -3,6 +3,9 @@ Date: 2025-12-07 23:03
 Category: Systematic Program Design
 Tags: ossu,computer-science,spd,racket
 
+This is my brain dump of week 5 of SPD. I might not go into too much detail and to understand some of it you might need to be familiar with the Racket language and have completed weeks 1-4. I haven't created blog posts about weeks 1-4 yet because I just spun up my blog at the beginning of week 5. I do plan on going back and creating blog posts for those weeks.
+
+### Week 5a - Naturals and 5b - Helpers
 
 For operating on natural numbers, the structure is similar to operating on lists. To process or traverse all elements from 0 to n, we recursively reduce n until we get to the base case 0, applying any operations in between.
 
@@ -40,14 +43,14 @@ When we shift knowledge domain, we should use a helper function.
 
 Helper function rules summarized:
 
-Function composition rule:  a function should be split into a function composition when it performs two or more distinct operations on the consumed data
+__Function composition rule:__  a function should be split into a function composition when it performs two or more distinct operations on the consumed data
 For example (same as above):
 ```racket
 (define (arrange-images loi)
   (layout-images (sort-images loi)))
 ```
 
-Operate on arbitrarily sized data rule:  When an expression must operate on a list -- and go arbitrarily far into that list -- then it must call a helper function to do that.
+__Operate on arbitrarily sized data rule:__  When an expression must operate on a list -- and go arbitrarily far into that list -- then it must call a helper function to do that.
 Example:
 ```racket
 (define (sort-images loi)
@@ -58,7 +61,7 @@ Example:
 ```
 The helper function we are calling here is insert.
 
-Knowledge domain shift:  When we shift knowledge domain, we should use a helper function.
+__Knowledge domain shift:__  When we shift knowledge domain, we should use a helper function.
 Example:
 ```racket
 (define (insert img loi)
