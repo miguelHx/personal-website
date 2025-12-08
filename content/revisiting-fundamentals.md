@@ -20,6 +20,10 @@ After SPD, I will probably take the next course in its section, which is Class-b
 
 I'll keep going down the list for Core Programming section, while concurrently going through another course from another section.  Doing just 2 courses concurrently for now but that may change.
 
+I don't plan on completing ALL of the courses.  I'm picking and choosing what I believe to be the most important or relevant, in an order that makes sense. Courses such as computer graphics, or machine learning, for example, I won't be taking because I'm not targeting that specific type of job.
+
+I won't be taking the calculus courses from the core math section since I already took them in college and feel like I could easily pick up necessary info if needed.
+
 ### Why go back to the basics?
 
 First, a little background. I earned a Bachelor’s degree in Computer Science & Engineering back in 2019. It took me four years. Between 2019 until now, I got 3.5 years of professional software engineering experience. I also had some career gaps in between due to personal reasons.
