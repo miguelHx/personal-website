@@ -8,7 +8,7 @@ For operating on natural numbers, the structure is similar to operating on lists
 
 Importantly, know that when we design programs, we come up with data definitions that represent information, and we can take any data to represent any information we want.  The example from the video was that we used a list of strings to represent natural numbers.  Now of course, the underlying hardware makes some primitive data faster than other primitive data.
 
-The good news is that while the problems get larger, the work to do at any moment in time does not get harder. Most of the work is HtDD (How to Design Data) and HtDF (How to Design Functions) work you already know how to do. That's the contribution of the design method, to reduce ever more complex problems to smaller pieces you know how to solve.
+The good news is that while the problems get larger, the work to do at any moment in time does not get harder. Most of the work is HtDD (How to Design Data) and HtDF (How to Design Functions) work I already know how to do (from previous weeks). That's the contribution of the design method, to reduce ever more complex problems to smaller pieces I know how to solve.
 
 Big design problems need to be broken into smaller pieces in order to be tractable.
 
