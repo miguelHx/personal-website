@@ -1,7 +1,6 @@
 Title: New blog - my thoughts
 Date: 2025-11-30 20:03
 Tags: first-blog-post
-Pin: true
 
 Why am I getting into blogging? Partly as a way to deepen my own learning, but also to build a stronger online technical presence, and to create a digital trail of my own learning journey.
 
