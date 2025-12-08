@@ -8,7 +8,8 @@ posts getting too long though. Just want to keep it simple. Starting with unit 1
 
 ### Unit 1.4: Logic and Propositions
 
-A proposition is a statement that is True or False
+A proposition is a statement that is True or False.
+
 A large fraction of all math statements are of the if-then form.
 
 Learning about propositions, and propositions from propositions.
